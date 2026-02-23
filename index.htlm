@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Station Pélagique</title>
+    <!-- Ici on relie notre fichier de design (CSS) -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Le conteneur principal de ton application -->
+    <div class="dashboard-container">
+        
+        <!-- L'en-tête de ton app -->
+        <header>
+            <h1>Station Pélagique 🌊</h1>
+            <p>Bonjour Capitaine. Prête pour l'exploration ?</p>
+        </header>
+
+        <!-- Le menu pour naviguer entre tes modules -->
+         <nav class="menu">
+            <button id="btn-surf">🏄‍♀️ Surf & Sport</button>
+            <button id="btn-culture">📚 Culture</button>
+            <button id="btn-bio">🪸 Cours de Biologie</button>
+            <button id="btn-ia">🤖 Mon IA</button>
+        </nav>
+
+        <!-- L'écran principal qui va changer (avec un ID) -->
+        <main class="modules-grid" id="ecran-principal">
+            <div class="module">
+                <h2>👋 Accueil</h2>
+                <p>Bienvenue dans ta Station Pélagique. Que veux-tu faire aujourd'hui ?</p>
+                 <!-- Ton compteur d'énergie -->
+                 <p>⚡ Énergie de la coque : <span id="compteur">0</span></p>
+                 <br>
+                 <!-- Ton bouton de routine -->
+                 <button id="btn-routine">🌊 J'ai été dans l'eau !</button>
+               
+        </main>
+            </div>
+        
+
+    <!-- Ici on relie notre fichier d'intelligence (JavaScript) -->
+    <script src="script.js"></script>
+</body>
+</html>

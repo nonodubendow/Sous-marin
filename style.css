@@ -1,0 +1,86 @@
+/* 1. RÉGLAGES DE BASE (La toile de fond) */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; /* Police minimaliste et propre */
+}
+
+body {
+    background-color: #050B14; /* Un bleu nuit abyssal très apaisant */
+    color: #E2E8F0; /* Un texte gris très clair, doux pour les yeux */
+    display: flex;
+    justify-content: center; /* On centre l'application sur l'écran d'ordinateur */
+}
+
+/* 2. LE CONTENEUR PRINCIPAL (Format Téléphone) */
+.dashboard-container {
+    width: 100%;
+    max-width: 480px; /* Taille d'un écran de smartphone */
+    min-height: 100vh;
+    background-color: #0A192F; /* Le fond de ton sous-marin */
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5); /* Petite ombre pour détacher le téléphone du fond */
+}
+
+/* 3. L'EN-TÊTE (Le message d'accueil) */
+header {
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+header h1 {
+    font-size: 24px;
+    color: #64FFDA; /* Un cyan "bioluminescence" pour le titre */
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 14px;
+    color: #8892B0; /* Texte secondaire plus discret */
+}
+
+/* 4. LE MENU (Tes 4 grands boutons) */
+.menu {
+    display: grid; /* On utilise une grille pour ranger les boutons */
+    grid-template-columns: 1fr 1fr; /* 2 colonnes de taille égale */
+    gap: 10px; /* L'espace entre les boutons */
+    margin-bottom: 30px;
+}
+
+.menu button {
+    background-color: #112240; /* Couleur des boutons */
+    color: #E2E8F0;
+    border: 1px solid #233554; /* Petite bordure élégante */
+    padding: 15px 10px;
+    border-radius: 12px; /* Angles arrondis, c'est plus doux */
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.3s; /* Petite animation quand on touchera le bouton */
+}
+
+/* Effet quand on passe la souris (ou le doigt) sur un bouton */
+.menu button:hover {
+    background-color: #233554;
+    border-color: #64FFDA;
+    color: #64FFDA;
+}
+
+/* 5. LES MODULES (Les boîtes d'information comme le Kiosque) */
+.module {
+    background-color: #112240;
+    border-radius: 15px;
+    padding: 20px;
+    border-left: 4px solid #64FFDA; /* Petite ligne cyan sur le côté pour le style */
+}
+
+.module h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #CCD6F6;
+}
+
+.module p {
+    font-size: 14px;
+    color: #8892B0;
+}
